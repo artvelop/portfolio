@@ -1,7 +1,13 @@
 import React from 'react';
+import { Container } from '../../components/common';
+import { Profile } from './components';
 
 const Intro = () => {
-  return <div>HELLO</div>;
+  return (
+    <Container>
+      <Profile />
+    </Container>
+  );
 };
 
 export default Intro;
