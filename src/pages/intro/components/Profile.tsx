@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { customColor, profile } from '../../../constants';
-import { TyphoGraphy } from '../../../components/common';
-import { Description } from './index';
 import {
   AiOutlinePhone,
   AiOutlineMail,
   AiOutlineGithub,
   AiOutlineTag,
 } from 'react-icons/ai';
+import { TyphoGraphy } from 'components/common';
+import { customColor, profile } from 'constants/index';
+import { Description } from '.';
 
 export const Profile = () => {
   return (

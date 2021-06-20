@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from '../../components/common';
+import { Container } from 'components/common';
 import { Profile } from './components';
 
 const Intro = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { TyphoGraphy } from '../../../components/common';
-import { customColor } from '../../../constants';
+import { TyphoGraphy } from 'components/common';
+import { customColor } from 'constants/index';
 
 type Props = {
   icon: React.ReactNode;
