@@ -18,7 +18,7 @@ type TyphoGraphyProps = {
 };
 
 type StyledTyphoGraphyProps = {
-  type: '40' | '24' | '22' | '20' | '18' | '14' | '12' | '10' | '8';
+  type: '48' | '24' | '22' | '20' | '18' | '14' | '12' | '10' | '8';
   color?: string;
   textAlign?: 'left' | 'center' | 'right';
 };
@@ -32,7 +32,7 @@ export const TyphoGraphy = ({
   const changeTypeFontSize = useMemo(() => {
     switch (type) {
       case 'title':
-        return '40';
+        return '48';
       case 'h1':
         return '24';
       case 'h2':
