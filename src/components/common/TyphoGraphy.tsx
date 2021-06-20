@@ -3,13 +3,22 @@ import styled from '@emotion/styled';
 
 type TyphoGraphyProps = {
   children: React.ReactNode;
-  type?: 'h1' | 'h2' | 'h3' | 'h4' | 'body1' | 'body2' | 'sm1' | 'sm2';
+  type?:
+    | 'title'
+    | 'h1'
+    | 'h2'
+    | 'h3'
+    | 'h4'
+    | 'body1'
+    | 'body2'
+    | 'sm1'
+    | 'sm2';
   color?: string;
   textAlign?: 'left' | 'center' | 'right';
 };
 
 type StyledTyphoGraphyProps = {
-  type: '24' | '22' | '20' | '18' | '14' | '12' | '10' | '8';
+  type: '40' | '24' | '22' | '20' | '18' | '14' | '12' | '10' | '8';
   color?: string;
   textAlign?: 'left' | 'center' | 'right';
 };
@@ -22,6 +31,8 @@ export const TyphoGraphy = ({
 }: TyphoGraphyProps) => {
   const changeTypeFontSize = useMemo(() => {
     switch (type) {
+      case 'title':
+        return '40';
       case 'h1':
         return '24';
       case 'h2':
