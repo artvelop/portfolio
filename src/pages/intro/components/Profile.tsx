@@ -57,7 +57,6 @@ const DescriptionForm = styled.div`
 const RightBox = styled.div`
   width: 100%;
   border-radius: 4px;
-  border: 1px solid ${customColor.gray};
   padding: 16px;
 `;
 
