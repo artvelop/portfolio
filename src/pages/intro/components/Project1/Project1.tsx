@@ -118,6 +118,16 @@ export const Project1: React.FC = () => {
           <br />
           서버를 편하게 관리할 수 있도록 인프라를 구축하는 것도 가능하다는 것을
           알게되었습니다.
+          <br />
+          <br />
+        </TyphoGraphy>
+        <TyphoGraphy type="h4" color={customColor.black} fontHeight="24px">
+          추가적으로 ios 앱스토어에 배포할 때 구글로그인만 구현했다고
+          <br />
+          Apple로그인도 구현해달라고 해서 아직까지 ios앱 배포를 못하고 있는데
+          <br />
+          정말 앱을 런칭하는 과정에서는 예측할 수 없는 굉장히 많은 난제들이
+          있구나하고 느꼈습니다ㅠㅠ
         </TyphoGraphy>
       </Content>
     </Wrapper>
