@@ -24,7 +24,7 @@ export const Profile = () => {
         </LeftBox>
         <RightBox>
           <TyphoGraphy type="title" color={customColor.gray}>
-            JUNIOR DEVELOPER
+            FRONT DEVELOPER
           </TyphoGraphy>
           <DescriptionForm>
             <Description
