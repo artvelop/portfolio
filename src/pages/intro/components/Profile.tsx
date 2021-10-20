@@ -6,7 +6,7 @@ import {
   AiOutlineGithub,
   AiOutlineTag,
 } from 'react-icons/ai';
-import { TyphoGraphy } from 'components/common';
+import { TyphoGraphy, Wrapper } from 'components/common';
 import { customColor, profile } from 'constants/index';
 import { Description } from '.';
 
@@ -85,11 +85,4 @@ const ProfileImage = styled.div`
   height: 256px;
   background-image: url(${profile.img});
   background-size: cover;
-`;
-
-const Wrapper = styled.div`
-  border-radius: 4px;
-  background-color: ${customColor.white};
-  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
-  padding: 16px;
 `;

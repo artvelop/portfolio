@@ -3,6 +3,7 @@ type Color = {
   gray: string;
   skyGray: string;
   white: string;
+  hashtag: string;
 };
 
 export const customColor: Color = {
@@ -10,4 +11,5 @@ export const customColor: Color = {
   skyGray: '#e5e5e5',
   gray: '#343434',
   white: '#ffffff',
+  hashtag: '#3f729B',
 };
