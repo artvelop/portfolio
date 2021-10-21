@@ -10,6 +10,10 @@ type StyleProps = {
   color: string;
 };
 
+type BoxStyleProps = {
+  top: boolean;
+};
+
 export const Wrapper: React.FC<Props> = ({ children, topVisible = true }) => {
   return (
     <Wrap>
@@ -20,7 +24,7 @@ export const Wrapper: React.FC<Props> = ({ children, topVisible = true }) => {
           <CircleButton color="#5CBA73" />
         </WindowTop>
       )}
-      <Box>{children}</Box>
+      <Box top={topVisible}>{children}</Box>
     </Wrap>
   );
 };
@@ -50,8 +54,10 @@ const CircleButton = styled.div<StyleProps>`
   }
 `;
 
-const Box = styled.div`
+const Box = styled.div<BoxStyleProps>`
   border-radius: 4px;
+  ${(props) =>
+    props.top && 'border-top-left-radius: 0px; border-top-right-radius: 0px;'}
   background-color: ${customColor.white};
   box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
   padding: 16px;
