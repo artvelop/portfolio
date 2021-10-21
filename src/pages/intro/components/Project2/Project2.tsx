@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, TyphoGraphy } from 'components/common';
+import { Wrapper, TyphoGraphy, ChipItem } from 'components/common';
 import { customColor } from 'constants/index';
 import styled from '@emotion/styled';
 
@@ -76,7 +76,6 @@ export const Project2: React.FC = () => {
           <br />
         </TyphoGraphy>
       </Content>
-
       <Content>
         <TyphoGraphy
           type="h2"
@@ -105,10 +104,24 @@ export const Project2: React.FC = () => {
           논의를 했던 부분이 추후에 제가 DB를 다룰 때 좋은 경험이 되었습니다
         </TyphoGraphy>
       </Content>
+      <ChipContent>
+        <ChipItem label="javascript" />
+        <ChipItem label="mysql" />
+        <ChipItem label="angular.js" />
+        <ChipItem label="next.js" />
+        <ChipItem label="actionhero" />
+        <ChipItem label="aws-S3" />
+      </ChipContent>
     </Wrapper>
   );
 };
 
 const Content = styled.div`
   margin-top: 16px;
+`;
+
+const ChipContent = styled.div`
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
 `;

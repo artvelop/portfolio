@@ -12,7 +12,7 @@ import { Description } from '.';
 
 export const Profile = () => {
   return (
-    <Wrapper>
+    <Wrapper topVisible={false}>
       <FlexBox>
         <LeftBox>
           <ProfileImage />

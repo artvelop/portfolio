@@ -2,9 +2,53 @@ import styled from '@emotion/styled';
 import { customColor } from 'constants/index';
 import React from 'react';
 
-export const Wrapper: React.FC = ({ children }) => {
-  return <Box>{children}</Box>;
+type Props = {
+  topVisible?: boolean;
 };
+
+type StyleProps = {
+  color: string;
+};
+
+export const Wrapper: React.FC<Props> = ({ children, topVisible = true }) => {
+  return (
+    <Wrap>
+      {topVisible && (
+        <WindowTop>
+          <CircleButton color="#f25330" />
+          <CircleButton color="#FEBB34" />
+          <CircleButton color="#5CBA73" />
+        </WindowTop>
+      )}
+      <Box>{children}</Box>
+    </Wrap>
+  );
+};
+
+const Wrap = styled.div``;
+
+const WindowTop = styled.div`
+  display: flex;
+  background-color: #3f3f3f;
+  height: 12px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+`;
+
+const CircleButton = styled.div<StyleProps>`
+  cursor: pointer;
+  background-color: ${(props) => props.color};
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+  margin-right: 8px;
+  &:hover {
+    opacity: 0.5;
+  }
+`;
 
 const Box = styled.div`
   border-radius: 4px;

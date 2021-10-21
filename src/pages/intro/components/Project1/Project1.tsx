@@ -1,7 +1,13 @@
 import React from 'react';
-import { Wrapper, TyphoGraphy, PreviewImage } from 'components/common';
+import {
+  Wrapper,
+  TyphoGraphy,
+  PreviewImage,
+  ChipItem,
+} from 'components/common';
 import { customColor } from 'constants/index';
 import styled from '@emotion/styled';
+import Chip from '@mui/material/Chip';
 
 export const Project1: React.FC = () => {
   return (
@@ -132,6 +138,16 @@ export const Project1: React.FC = () => {
           알게되었습니다.
         </TyphoGraphy>
       </Content>
+      <ChipContent>
+        <ChipItem label="typescript" />
+        <ChipItem label="react-native" />
+        <ChipItem label="DynamoDB" />
+        <ChipItem label="serverless" />
+        <ChipItem label="lambda" />
+        <ChipItem label="api-gateway" />
+        <ChipItem label="cognito" />
+        <ChipItem label="cloudWatch" />
+      </ChipContent>
     </Wrapper>
   );
 };
@@ -142,4 +158,10 @@ const ImageSlider = styled.div`
 
 const Content = styled.div`
   margin-top: 16px;
+`;
+
+const ChipContent = styled.div`
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
 `;

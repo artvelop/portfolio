@@ -1,5 +1,10 @@
 import React from 'react';
-import { Wrapper, TyphoGraphy, PreviewImage } from 'components/common';
+import {
+  Wrapper,
+  TyphoGraphy,
+  PreviewImage,
+  ChipItem,
+} from 'components/common';
 import { customColor } from 'constants/index';
 import styled from '@emotion/styled';
 
@@ -102,6 +107,15 @@ export const Project3: React.FC = () => {
           되었습니다
         </TyphoGraphy>
       </Content>
+      <ChipContent>
+        <ChipItem label="typescript" />
+        <ChipItem label="mysql" />
+        <ChipItem label="next.js" />
+        <ChipItem label="serverless" />
+        <ChipItem label="aws-s3" />
+        <ChipItem label="cloudwatch" />
+        <ChipItem label="api-gateway" />
+      </ChipContent>
     </Wrapper>
   );
 };
@@ -112,4 +126,10 @@ const ImageSlider = styled.div`
 
 const Content = styled.div`
   margin-top: 16px;
+`;
+
+const ChipContent = styled.div`
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
 `;
