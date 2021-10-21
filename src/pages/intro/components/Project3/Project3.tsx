@@ -11,9 +11,11 @@ import styled from '@emotion/styled';
 export const Project3: React.FC = () => {
   return (
     <Wrapper>
-      <TyphoGraphy type="title" color={customColor.black}>
-        IWONDER - 자기소개 웹 플랫폼
-      </TyphoGraphy>
+      <Content>
+        <TyphoGraphy type="title" color={customColor.black}>
+          IWONDER - 자기소개 웹 플랫폼
+        </TyphoGraphy>
+      </Content>
       <ImageSlider>
         <div style={{ display: 'flex', gap: '28px', justifyContent: 'center' }}>
           <PreviewImage
@@ -121,7 +123,7 @@ export const Project3: React.FC = () => {
 };
 
 const ImageSlider = styled.div`
-  margin-top: 40px;
+  margin-top: 32px;
 `;
 
 const Content = styled.div`

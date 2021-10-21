@@ -12,9 +12,11 @@ import Chip from '@mui/material/Chip';
 export const Project1: React.FC = () => {
   return (
     <Wrapper>
-      <TyphoGraphy type="title" color={customColor.black}>
-        내친구 밸런스 게임
-      </TyphoGraphy>
+      <Content>
+        <TyphoGraphy type="title" color={customColor.black}>
+          내친구 밸런스 게임
+        </TyphoGraphy>
+      </Content>
       <ImageSlider>
         <div style={{ display: 'flex', gap: '28px', justifyContent: 'center' }}>
           <PreviewImage url="https://artvelop.s3.ap-northeast-2.amazonaws.com/profile/fdbg/fdbg-introduce1.png" />
@@ -153,7 +155,7 @@ export const Project1: React.FC = () => {
 };
 
 const ImageSlider = styled.div`
-  margin-top: 40px;
+  margin-top: 32px;
 `;
 
 const Content = styled.div`

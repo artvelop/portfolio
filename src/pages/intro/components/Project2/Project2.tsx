@@ -6,9 +6,11 @@ import styled from '@emotion/styled';
 export const Project2: React.FC = () => {
   return (
     <Wrapper>
-      <TyphoGraphy type="title" color={customColor.black}>
-        PLAYAUTO - 프로모션 페이지 개발
-      </TyphoGraphy>
+      <Content>
+        <TyphoGraphy type="title" color={customColor.black}>
+          PLAYAUTO - 프로모션 페이지 개발
+        </TyphoGraphy>
+      </Content>
       <Content>
         <TyphoGraphy
           type="h2"
