@@ -3,6 +3,7 @@ import { Container } from 'components/common';
 import { Profile } from './components';
 import { Project1 } from './components/Project1';
 import { Project2 } from './components/Project2';
+import { Project3 } from './components/Project3';
 import styled from '@emotion/styled';
 
 const Intro = () => {
@@ -13,6 +14,8 @@ const Intro = () => {
       <Project1 />
       <Gap />
       <Project2 />
+      <Gap />
+      <Project3 />
       <Footer />
     </Container>
   );

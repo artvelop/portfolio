@@ -90,6 +90,7 @@ export const TyphoGraphy: React.FC<TypoGraphyProps> = ({
 };
 
 const TypoGraphyText = styled.div<StyledTypoGraphyProps>`
+  font-family: 'SCDream';
   ${(props) => props.pointer && 'cursor: pointer;'};
   font-size: ${(props) => props.type}px;
   color: ${(props) => props.color};

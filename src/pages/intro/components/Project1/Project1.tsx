@@ -56,6 +56,18 @@ export const Project1: React.FC = () => {
           }>
           https://play.google.com/store/apps/details?id=com.fdbg&hl=KR&gl=KR
         </TyphoGraphy>
+        <TyphoGraphy
+          color={customColor.hashtag}
+          pointer={true}
+          fontHeight="32px"
+          onClick={() =>
+            window.open(
+              'https://artvelop.notion.site/ef7b2ac3bb29411dbffa8350f7db3854?v=9a4b91c2de6346628d5b530dab494284',
+              '_blank',
+            )
+          }>
+          이슈관리내역보기
+        </TyphoGraphy>
       </Content>
       <Content>
         <TyphoGraphy
