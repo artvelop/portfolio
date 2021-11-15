@@ -51,7 +51,7 @@ export const Project4: React.FC = () => {
         <TyphoGraphy type="h4" color={customColor.black} fontHeight="24px">
           최근 리액트에서 많이 사용되는 애니메이션 라이브러리 framer을 이용하여
           <br />
-          브라우저가 렌더링되는 과정을 한눈에 볼 수 있게 인터렉션하게 표현한
+          브라우저가 렌더링되는 과정을 한눈에 볼 수 있도록 인터렉션하게 표현한
           <br />
           인터렉티브 웹 페이지입니다
         </TyphoGraphy>
