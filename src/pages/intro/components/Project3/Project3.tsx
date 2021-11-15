@@ -89,8 +89,8 @@ export const Project3: React.FC = () => {
           느꼈던 점
         </TyphoGraphy>
         <TyphoGraphy type="h4" color={customColor.black} fontHeight="24px">
-          rollingpaper.site를 카톡오픈채팅 하는 사람들이 많이 프로필에 공유하는
-          것을 보면서
+          rollingpaper.site를 활용하여 카톡오픈채팅 하는 사람들이 많이 프로필에
+          공유하는 것을 보면서
           <br />
           웹을 통해 자신을 재밌게 소개하는걸 공유하는 플랫폼을 만들고 싶었습니다
           <br />
