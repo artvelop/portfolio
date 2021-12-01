@@ -35,9 +35,9 @@ export const Project4: React.FC = () => {
           color={customColor.hashtag}
           pointer={true}
           onClick={() =>
-            window.open('https://artvelop.github.io/jolp-exhibition/', '_blank')
+            window.open('https://artvelop.github.io/crp-page/', '_blank')
           }>
-          https://artvelop.github.io/jolp-exhibition/
+          https://artvelop.github.io/crp-page/
         </TyphoGraphy>
       </Content>
       <Content>
