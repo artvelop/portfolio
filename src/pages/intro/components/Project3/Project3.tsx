@@ -59,7 +59,9 @@ export const Project3: React.FC = () => {
         <TyphoGraphy
           color={customColor.hashtag}
           pointer={true}
-          onClick={() => window.open('https://www.iwonder.link/', '_blank')}>
+          onClick={() =>
+            window.open('https://d87wrc0yd3m94.cloudfront.net/', '_blank')
+          }>
           https://www.iwonder.link/
         </TyphoGraphy>
       </Content>
